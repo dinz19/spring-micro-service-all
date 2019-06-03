@@ -1,0 +1,12 @@
+package com.cts.product.main.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Product {
+	
+	@Id
+	private long id;
+	
+
+}

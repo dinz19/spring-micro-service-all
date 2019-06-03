@@ -1,0 +1,8 @@
+package com.cts.product.main.entity;
+
+public class InventoryResponse {
+
+	@Data
+	private String productCode;
+	private Integer quanity;
+}

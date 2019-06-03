@@ -1,0 +1,25 @@
+package com.cts.inventory.main.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.cts.inventory.main.entity.Inventory;
+import com.cts.inventory.main.repository.InventoryRepository;
+
+@Repository("inventoryDao")
+public class InventoryDao {
+@Autowired
+	private InventoryRepository invRepo;
+	
+public List<Inventory> getAllInventorys() {
+	return invRepo.findAll();
+}
+
+public List<Inventory> addInventory(Inventory prod) {
+	 invRepo.save(prod);
+	 return invRepo.findAll();
+	
+}
+}

@@ -1,0 +1,6 @@
+package com.cts.product.main.entity;
+
+public class ProductResponse {
+
+	private String productCode;
+}

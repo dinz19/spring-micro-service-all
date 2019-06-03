@@ -1,0 +1,14 @@
+spring.application.name=common-entry
+server.port=8080
+zuul.prefix=/shop
+zuul.ignored-services=*
+
+zuul.routes.product_ms.path=/product/**
+zuul.routes.product_ms.service-id=product-microservice
+zuul.routes.inventory_ms.path=/inventory/**
+zuul.routes.inventory_ms.service-id=inventory-microservice
+
+eureka.instance.hostname=localhost
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+eureka.client.service-url.defaultZone=http://localhost:1234/eureka

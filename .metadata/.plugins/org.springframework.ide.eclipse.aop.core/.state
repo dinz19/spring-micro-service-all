@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Maven-Test"/>
+<aop-project name="maven_tst"/>
+<aop-project name="Inventory"/>
+<aop-project name="Eureka"/>
+<aop-project name="Zuul"/>
+<aop-project name="003STS-SpringBoot.Data"/>
+</aop-reference-model>

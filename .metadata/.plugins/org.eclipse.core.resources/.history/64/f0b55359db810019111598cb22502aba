@@ -1,0 +1,21 @@
+package com.cts.product.main.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cts.product.main.dao.ProductDao;
+import com.cts.product.main.entity.Product;
+
+
+public class ProductService {
+	
+	@Autowired
+	private ProductDao prodDao;
+
+	public List<Product> getAllProducts() {
+		List<Product>  prods = 
+		return null;
+	}
+
+}

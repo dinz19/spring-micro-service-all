@@ -1,0 +1,40 @@
+package com.cts..main.restcontroller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cts.inventory.main.entity.Product;
+import com.cts.inventory.main.service.ProductService;
+
+@RestController
+public class ProductController {
+	
+	@Autowired
+	private InventoryService invService;
+
+@RequestMapping("/")
+public String welcome() {
+	return "welcome to invuct micro service";
+}
+
+
+@RequestMapping("/all")
+public List getAllProducts() {
+	List<Product> invs = invService.getAllProducts();
+	return invs;
+}
+
+
+@RequestMapping(value = "/add", method = RequestMethod.POST)
+public List<Product> addProduct(@RequestBody Product invuct) {
+	List<Product> invs  = invService.addProduct(invuct);
+	return invs;
+}
+
+
+}

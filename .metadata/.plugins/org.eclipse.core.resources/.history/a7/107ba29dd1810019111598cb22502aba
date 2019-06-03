@@ -1,0 +1,9 @@
+package com.cts.product.main;
+
+public class ProductEntryPoint {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

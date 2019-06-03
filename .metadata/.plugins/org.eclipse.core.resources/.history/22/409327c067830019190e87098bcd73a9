@@ -1,0 +1,10 @@
+package com.cts.product.main.entity;
+
+import lombok.Data;
+
+public class InventoryResponse {
+
+	@Data
+	private String productCode;
+	private Integer quanity;
+}

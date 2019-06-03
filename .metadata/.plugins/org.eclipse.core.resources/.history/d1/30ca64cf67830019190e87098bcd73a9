@@ -1,0 +1,46 @@
+package com.cts.product.main.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.client.RestTemplate;
+
+import com.cts.product.main.entity.InventoryResponse;
+import com.cts.product.main.entity.Product;
+import com.cts.product.main.repository.ProductRepository;
+
+@Repository("productDao")
+public class ProductDao {
+
+	@Autowired
+private ProductRepository prodRepo;
+
+@Autowired
+private RestTemplate restTemplate;
+	
+public List<Product> getAllProducts() {
+	return prodRepo.findAll();
+}
+
+public List<Product> addProduct(Product prod) {
+	 prodRepo.save(prod);
+	 return prodRepo.findAll();
+	
+}
+public Product findByProductCode(String prodCode){
+	Product prod = prodRepo.findByProductCode(prodCode);
+	if(prod != null) {
+			/* String url = "http://inventory-microservice/shop/inventory/"+prodCode; */
+		String url = "http://localhost:8080/shop/inventory/"+prodCode;
+		ResponseEntity<Product> restTemplate.getForEntity(url, InventoryResponse.class);
+		return  prod;
+	}else{
+		return null;
+	}
+	
+}
+}

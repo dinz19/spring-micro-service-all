@@ -1,0 +1,15 @@
+package com.cts.zuul.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+
+public class ZuulEntryPoint {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ZuulEntryPoint.class, args);
+	
+	}
+
+}

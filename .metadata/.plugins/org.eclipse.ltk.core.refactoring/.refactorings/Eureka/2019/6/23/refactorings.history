@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.cts.eureka.main&apos; to &apos;Hystrix/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Eureka&apos;&#x0D;&#x0A;- Destination element: &apos;Hystrix/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Eureka/src/main/java/com.cts.eureka.main&apos;" description="Copy package" destination="=Hystrix/src\/main\/java" element1="/src\/main\/java&lt;com.cts.eureka.main" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1559540321994" version="1.0"/>
+</session>

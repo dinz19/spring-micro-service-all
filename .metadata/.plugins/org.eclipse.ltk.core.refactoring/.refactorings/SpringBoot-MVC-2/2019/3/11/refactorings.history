@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cts.product.product&apos; to &apos;Product&apos;&#x0D;&#x0A;- Original project: &apos;SpringBoot-MVC-2&apos;&#x0D;&#x0A;- Original element: &apos;com.cts.product.product&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cts.product.Product&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;product&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.cts.product{product.java[product" matchStrategy="1" name="Product" qualified="false" references="true" similarDeclarations="false" stamp="1552542422151" textual="false" version="1.0"/>
+</session>

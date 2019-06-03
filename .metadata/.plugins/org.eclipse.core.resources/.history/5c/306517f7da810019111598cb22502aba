@@ -1,0 +1,5 @@
+package com.cts.product.main.service;
+
+public class ProductService {
+
+}

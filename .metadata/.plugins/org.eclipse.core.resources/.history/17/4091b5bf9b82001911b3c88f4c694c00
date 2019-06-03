@@ -1,0 +1,27 @@
+package com.cts.inventory.main.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cts.inventory.main.dao.InventoryDao;
+import com.cts.inventory.main.entity.Inventory;
+
+@Service("invService")
+public class InventoryService {
+	
+	@Autowired
+	private InventoryDao prodDao;
+
+	public List<Inventory> getAllInventorys() {
+		List<Inventory>  prods = prodDao.getAllInventorys();
+		return prods;
+	}
+
+	public List<Inventory> addInventory(Inventory prod) {
+		List<Inventory>  prods = prodDao.addInventory(prod);
+		return prods;
+	}
+
+}

@@ -1,0 +1,6 @@
+server.port = 8080
+zuul.prefix = /shop
+zuul.ignored.services = *
+
+zuul.routes.product_ms=/product/**
+zuul.routes.product_ms=/product/**
